@@ -1,1 +1,1 @@
-# geant-pki-client
+# GÉANT-PKI-Client
