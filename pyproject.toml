@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "GEANT-TCS-Client"
+version = "0.1.0"
+description = "Python module for the GÉANT TCS API"
+readme = "README.md"
+authors = ["Robert Grätz"]
+license = "GPL-3.0-or-later"
+homepage = "https://github.com/ikreb7/GEANT-TCS-Client"
+repository = "https://github.com/ikreb7/GEANT-TCS-Client"
+documentation = "https://github.com/ikreb7/GEANT-TCS-Client"
+packages = [
+    { include = "geant-tcs-client" },
+    { include = "README.md" },
+    { include = "LICENSE" },
+]
+
+[tool.poetry.dependencies]
+python = "3.8.5"
+click = "^7.1.2"
+httpx = "^0.17.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+trackdownchanges = 'geant-tcs-client.main:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
