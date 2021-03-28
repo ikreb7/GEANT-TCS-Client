@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "GEANT-TCS-Client"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python module for the GÉANT TCS API"
 readme = "README.md"
 authors = ["Robert Grätz"]
