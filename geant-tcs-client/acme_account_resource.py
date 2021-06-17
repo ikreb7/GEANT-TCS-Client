@@ -82,7 +82,7 @@ class ACMEAccountResource:
             evDetails.orgLocality (str): EV organization city [Size must be between 0 and 128 inclusive]
             evDetails.orgStateOrProvince (str): EV organization state/province [Size must be between 0 and 128 inclusive]
             evDetails.orgPostalCode (str): EV organization postal code [Size must be between 0 and 40 inclusive]
-            evDetails.orgJoiState (str): EV organization state or province of incorporation [Size must be between 0 and 128 inclusive]
+            evDetails.orgJoiState (str): EV organization state or province of incorporation [Size must be between 0 and  128 inclusive]
             evDetails.orgJoiCountry (str): EV organization country of incorporation [Size must be between 2 and 2 inclusive]
             evDetails.orgJoiLocality (str): EV organization jurisdiction of incorporation city or town [Size must be between 0 and 128 inclusive]
             evDetails.assumedName (str): EV organization business category. Values: [PrivateOrganization, GovernmentEntity, BusinessEntity, NonCommercialEntity] []
@@ -246,7 +246,7 @@ class ACMEAccountResource:
 
         """
 
-        url = f"/acme/{self.version}/account/?position={position}&size={size}&organizationID={organization_id}&" \
+        url = f"/acme/{self.version}/account?position={position}&size={size}&organizationID={organization_id}&" \
               f"name={name}&acmeServer={acme_server}&certValidationType={cert_validation_type}&status={status}"
         headers = {"login": self.username, "password": self.password, "customerUri": self.custom_uri}
 
