@@ -5,7 +5,7 @@ class ACMEAccountResource:
     def __init__(self, client, config: dict, version: str = "v1"):
         self.client = client
         self.version = version
-        self.login = config.get("username")
+        self.username = config.get("username")
         self.password = config.get("password")
         self.custom_uri = config.get("custom_uri")
 

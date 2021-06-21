@@ -12,7 +12,7 @@ class ClientCertificates:
         self.password = config.get("password")
         self.custom_uri = config.get("custom_uri")
 
-    def listing_client_certificate_types(self, ):
+    def listing_client_certificate_types(self):
         """ A GET request will list all of SSL types.
 
         Returns:
