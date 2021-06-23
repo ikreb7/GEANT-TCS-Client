@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "GEANT-TCS-Client"
-version = "0.1.1"
+version = "0.1.2"
 description = "Python module for the GÉANT TCS API"
 readme = "README.md"
 authors = ["Robert Grätz"]
@@ -22,7 +22,7 @@ httpx = "^0.17.1"
 [tool.poetry.dev-dependencies]
 
 [tool.poetry.scripts]
-trackdownchanges = 'geant-tcs-client.main:main'
+geant-tcs-client = 'geant-tcs-client.main:main'
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
